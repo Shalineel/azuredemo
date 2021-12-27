@@ -1,0 +1,10 @@
+# Azure Outputs
+output "az_ip" {
+  description = "The public IP address of the Azure virtual machine"
+  value = module.azure.ip
+}
+
+output "az_ssh_connection_string" {
+  description = "The SSH command to connect to the Azure virtual machine"
+  value = module.azure.ssh_connection_string
+}
