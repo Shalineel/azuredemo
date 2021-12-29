@@ -6,8 +6,7 @@
 trigger:
 - main
 
-pool:
-  vmImage: DOTNETMC
+pool: default  
 
 steps:
 - script: echo Hello, world!
