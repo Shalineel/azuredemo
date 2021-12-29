@@ -20,5 +20,5 @@ steps:
     backendServiceArm: 'Azure Pass - Sponsorship(808d89db-240f-46be-842e-c351bb8f968a)'
     backendAzureRmResourceGroupName: 'demo'
     backendAzureRmStorageAccountName: 'shaluneel18'
-    backendAzureRmContainerName: 'tfstate'
+    backendAzureRmContainerName: '$logs'
     backendAzureRmKey: 'terraform.tfstate'
