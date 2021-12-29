@@ -28,3 +28,9 @@ steps:
     command: 'apply'
     workingDirectory: '$(System.DefaultWorkingDirectory)/modules/azure'
     environmentServiceNameAzureRM: 'Azure Pass - Sponsorship(1)(808d89db-240f-46be-842e-c351bb8f968a)'
+- task: TerraformTaskV2@2
+  inputs:
+    provider: 'azurerm'
+    command: 'destroy'
+    workingDirectory: '$(System.DefaultWorkingDirectory)/modules/azure'
+    environmentServiceNameAzureRM: 'Azure Pass - Sponsorship(2)(808d89db-240f-46be-842e-c351bb8f968a)'
