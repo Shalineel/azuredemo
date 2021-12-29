@@ -22,3 +22,9 @@ steps:
     backendAzureRmStorageAccountName: 'shaluneel18'
     backendAzureRmContainerName: 'democontainer'
     backendAzureRmKey: 'terraform.tfstate'
+- task: TerraformTaskV2@2
+  inputs:
+    provider: 'azurerm'
+    command: 'apply'
+    workingDirectory: '$(System.DefaultWorkingDirectory)/modules/azure'
+    environmentServiceNameAzureRM: 'Azure Pass - Sponsorship(1)(808d89db-240f-46be-842e-c351bb8f968a)'
