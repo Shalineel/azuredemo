@@ -7,8 +7,9 @@ terraform {
   }
 }
 terraform {
-  backend "azurerm" {}
-
+  backend "azurerm" {
+     key = "dev/tf.state"
+  }
 }
 provider "azurerm" {
   features {}
