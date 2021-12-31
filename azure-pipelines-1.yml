@@ -17,11 +17,8 @@ steps:
     provider: 'azurerm'
     command: 'init'
     workingDirectory: '$(System.DefaultWorkingDirectory)/modules/azure'
+    commandOptions: '-backend-config="qa.conf"'
     backendServiceArm: 'Azure Pass - Sponsorship(808d89db-240f-46be-842e-c351bb8f968a)'
-    backendAzureRmResourceGroupName: 'demo'
-    backendAzureRmStorageAccountName: 'shaluneel18'
-    backendAzureRmContainerName: 'democontainer'
-    backendAzureRmKey: 'terraform.tfstate'
 
 - task: TerraformTaskV2@2
   inputs:
