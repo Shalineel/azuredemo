@@ -1,5 +1,5 @@
 resource "azurerm_linux_virtual_machine" "vm_instance" {
-  name                            = "hitc"
+  name                            = var.vmname
   location                        = azurerm_resource_group.hitc.location
   resource_group_name             = azurerm_resource_group.hitc.name
   network_interface_ids           = [azurerm_network_interface.hitc-nic.id]
