@@ -8,6 +8,11 @@ variable "azure_location" {
   type = string
 }
 
+variable "vmname" {
+  description = "The VM Name"
+  type = string
+}
+
 variable "ssh_pub_key_file" {
   description = "The path to the public SSH key associated with the local user account"
   type = string
